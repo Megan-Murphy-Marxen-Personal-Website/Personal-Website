@@ -117,6 +117,9 @@ h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     padding-left: 30px;
+    padding-top: 2px;
+    margin: 18px;
+    background-color: #E4F0D0;
 }
 .proj-h2{
     margin-bottom: 10px;
