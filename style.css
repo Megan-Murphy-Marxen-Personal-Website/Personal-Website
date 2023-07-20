@@ -57,7 +57,18 @@ a:visited{
     margin: 30px;
     margin-left: 15px;
 }
+.title-about{
+    background-color: #E4F0D0;
+    margin-bottom: 0;
+    color: #26532B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about-h2{
+    margin-bottom: 0;
+    padding: 20px;
+}
 .hobby{
+    background-color: #E4F0D0;
     border-top:2px solid #26532B;
     color: #26532B;
     padding: 20px;
