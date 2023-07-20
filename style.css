@@ -3,7 +3,7 @@ body{
 }
 main{
     padding-top: 150px;
-    padding-bottom:60px;
+    padding-bottom:80px;
 }
 header{
     background-color: #673C4F;
@@ -60,6 +60,8 @@ a:visited{
 .title-about{
     background-color: #E4F0D0;
     margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
     color: #26532B;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -72,6 +74,8 @@ a:visited{
     border-top:2px solid #26532B;
     color: #26532B;
     padding: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
     font-size: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
