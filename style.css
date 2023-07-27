@@ -4,6 +4,25 @@ body{
 main{
     padding-top: 150px;
     padding-bottom:80px;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 1fr;
+}
+.home{
+    grid-template-areas: 
+    "div"
+    "section-1"
+    "section-2" 
+    ;
+}
+.home:nth-child(1){
+    grid-area: div;
+}
+.home:nth-child(2){
+    grid-area: section-1;
+}
+.home:nth-child(3){
+    grid-area: section-2;
 }
 /* Persistent header style */
 header{
