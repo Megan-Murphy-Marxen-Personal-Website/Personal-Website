@@ -8,6 +8,7 @@ main{
     gap: 1em;
     grid-auto-columns: 1fr;
 }
+/* Homepage grid area */
 .home{
     grid-template-areas:
     'div div div div div'
@@ -23,6 +24,52 @@ main{
 .quote{
     grid-area: section-2;
 }
+/* About page grid area */
+.about{
+    grid-template-areas: 
+    'div div div div'
+    'hobby-1 hobby-1 hobby-1 hobby-1'
+    'hobby-2 hobby-2 hobby-2 hobby-2'
+    'hobby-3 hobby-3 hobby3 hobby-3'
+    ;
+}
+/* .title-about{
+    grid-area: div;
+} */
+/* .hobby-1{
+    grid-area: hobby-1;
+}  */
+ /* .hobby-2{
+    grid-area: hobby-2;
+}  */
+/* .hobby-3{
+    grid-area: hobby-3;
+} */
+
+/* Portfolio page grid area */
+.portfolio{
+    grid-template-areas: 
+    'div div div div'
+    'project-1 project-1 project-1 project-1'
+    'project-2 project-2 project-2 project-2'
+    'project-3 project-3 project-3 project-3'
+    ;
+}
+.project-head{
+    grid-area: div;
+}
+.project-1{
+    grid-area: project-1;
+}
+.project-2{
+    grid-area: project-2;
+}
+.project-3{
+    grid-area: project-3;
+}
+/*contact page grid */
+
+
 /* Persistent header style */
 header{
     background-color: #673C4F;
@@ -94,7 +141,7 @@ a:visited{
     margin-bottom: 0;
     padding: 20px;
 }
-.hobby{
+.hobby-1, .hobby-2, .hobby-3{
     background-color: #E4F0D0;
     border-top:2px solid #26532B;
     color: #26532B;
@@ -142,7 +189,7 @@ h3{
 .proj-h2{
     margin-bottom: 10px;
 }
-.project{
+.project-1 , .project-2, .project-3{
     background-color: #E4F0D0;
     color: #26532B;
     margin: 20px;
@@ -168,6 +215,7 @@ h3{
     margin: 10px;
     border: 3px solid #26532B;
 }
+
 /* Footer style */
 .mail{
     color: #E4F0D0;
