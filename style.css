@@ -2,8 +2,8 @@ body{
     background-color: #C2D8B9;
 }
 main{
-    padding-top: 150px;
-    padding-bottom:80px;
+    padding-top: 120px;
+    padding-bottom:60px;
     display: grid;
     gap: 1em;
     grid-auto-columns: 1fr;
@@ -27,24 +27,24 @@ main{
 /* About page grid area */
 .about{
     grid-template-areas: 
-    'div div div div'
-    'hobby-1 hobby-1 hobby-1 hobby-1'
-    'hobby-2 hobby-2 hobby-2 hobby-2'
-    'hobby-3 hobby-3 hobby3 hobby-3'
+    'div div div'
+    'hobby-1 hobby-1 hobby-1'
+    'hobby-2 hobby-2 hobby-2'
+    'hobby-3 hobby-3 hobby-3'
     ;
 }
-/* .title-about{
+.title-about{
     grid-area: div;
-} */
-/* .hobby-1{
+} 
+.hobby-1{
     grid-area: hobby-1;
-}  */
- /* .hobby-2{
+} 
+ .hobby-2{
     grid-area: hobby-2;
-}  */
-/* .hobby-3{
+} 
+.hobby-3{
     grid-area: hobby-3;
-} */
+}
 
 /* Portfolio page grid area */
 .portfolio{
@@ -68,8 +68,34 @@ main{
     grid-area: project-3;
 }
 /*contact page grid */
-
-
+.contact{
+    grid-template-areas:
+    'div div div div'
+    'section-1 section-1 section-2 section-2'
+    ;
+}
+.title-contact{
+    grid-area: div;
+}
+.form{
+    grid-area: section-1;
+}
+.img-2{
+    grid-area: section-2;
+}
+/*Success page grid */
+.success{
+    grid-template-areas:
+    'div div'
+    'section section'
+    ;
+}
+.title-success{
+    grid-area: div;
+}
+.img-3{
+    grid-area: section;
+}
 /* Persistent header style */
 header{
     background-color: #673C4F;
@@ -77,6 +103,7 @@ header{
    position:fixed;
    width: 100%;
    top:0;
+   border-radius: 1em;
 }
 .name{
     text-align: center;
@@ -117,7 +144,7 @@ a:visited{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .personal-photo{
-    width: 350px;
+    width: 330px;
     float:right;
    padding: 10px;
    margin: 5px;
@@ -229,7 +256,6 @@ h3{
     background-color: #E4F0D0;
     border-radius: 2em;
     border:3px solid #26532B;
-    width: 40%;
 }
 form{
     padding: 3em;
@@ -283,4 +309,5 @@ footer{
     position: fixed;
     width: 100%;
     bottom: 0;
+    border-radius: 1em;
 }
