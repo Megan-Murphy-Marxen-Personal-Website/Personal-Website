@@ -206,11 +206,12 @@ h3{
 .project-head{
     color: #26532B;
     border-bottom: 2px solid #26532B;
+    border-radius: 1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     padding-left: 30px;
     padding-top: 2px;
-    margin: 18px;
+    margin: 10px;
     background-color: #E4F0D0;
 }
 .proj-h2{
@@ -218,8 +219,9 @@ h3{
 }
 .project-1 , .project-2, .project-3{
     background-color: #E4F0D0;
+    border-radius: 1em;
     color: #26532B;
-    margin: 20px;
+    margin: 10px;
     padding: 20px;
     font-size: 25px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
