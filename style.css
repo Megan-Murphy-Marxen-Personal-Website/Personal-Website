@@ -9,19 +9,18 @@ main{
     grid-auto-columns: 1fr;
 }
 .home{
-    grid-template-areas: 
-    "div"
-    "section-1"
-    "section-2" 
+    grid-template-areas:
+    'div div div div div'
+    'section-2 section-2 section-2 section-1 section-1'
     ;
 }
-.home:nth-child(1){
+.intro{
     grid-area: div;
 }
-.home:nth-child(2){
+.img{
     grid-area: section-1;
 }
-.home:nth-child(3){
+.quote{
     grid-area: section-2;
 }
 /* Persistent header style */
@@ -77,7 +76,7 @@ a:visited{
    margin: 5px;
 }
 .quote{
-    font-size: 50px;
+    font-size: 3em;
     font-style:italic;
     color: #26532B;
     margin: 20px;
