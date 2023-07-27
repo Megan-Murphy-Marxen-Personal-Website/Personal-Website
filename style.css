@@ -215,7 +215,62 @@ h3{
     margin: 10px;
     border: 3px solid #26532B;
 }
+/* Contact page style */
+.title-contact{
+    color: #26532B;
+    background-color: #E4F0D0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    padding-left: 1em;
+    border-radius: 2em;
+    border:3px solid #26532B;
+}
+.form{
+    background-color: #E4F0D0;
+    border-radius: 2em;
+    border:3px solid #26532B;
+    width: 40%;
+}
+form{
+    padding: 3em;
+}
+form label{
+    color: #26532B;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input[type="submit"]{
+    color: #E4F0D0;
+    background-color: #673C4F;
+    font-size: 18pt;
+    padding: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 1em;
+}
+.kitcat{
+    width: 30em;
+    border-radius: 2em;
+    float:  right;
+}
+/* Sucess Page Style */
 
+.success{
+    background-color: #E4F0D0;
+    margin: 30px;
+    height: 530px;
+}
+   
+.title-success{
+    color: #26532B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    padding-left: 1em;
+}
+.puma{
+    width: 20em;
+    border-radius: 2em;
+    margin: 1em;
+}
 /* Footer style */
 .mail{
     color: #E4F0D0;
