@@ -1,28 +1,35 @@
 body{
     background-color: #C2D8B9;
+    margin:0;
+    display: grid;
+    gap: 1em;
+    /* grid-auto-columns: 1fr; */
+    /* grid-template-areas: 
+    'header header header header'
+    'main main main main'
+    'footer footer footer footer'
+    ; */
 }
+/* header{
+    grid-area: header;
+} */
 main{
     padding-top: 120px;
     padding-bottom:60px;
     display: grid;
     gap: 1em;
     grid-auto-columns: 1fr;
+    /* grid-area: main; */
 }
+/* footer{
+    grid-area: footer;
+} */
 /* Homepage grid area */
 .home{
     grid-template-areas:
     'div div div div div'
     'section-2 section-2 section-2 section-1 section-1'
     ;
-}
-.intro{
-    grid-area: div;
-}
-.img{
-    grid-area: section-1;
-}
-.quote{
-    grid-area: section-2;
 }
 /* About page grid area */
 .about{
@@ -70,8 +77,8 @@ main{
 /*contact page grid */
 .contact{
     grid-template-areas:
-    'div div div div'
-    'section-1 section-1 section-2 section-2'
+    'div div div'
+    'section-1 section-1 section-2'
     ;
 }
 .title-contact{
@@ -116,7 +123,7 @@ header{
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
-a:active{
+a:link{
     color:#E4F0D0;
 }
 a:visited{
@@ -129,31 +136,44 @@ a:visited{
 .home{
     background-color: #E4F0D0;
     margin: 30px;
-    height: 530px;
+    height: 80vh;
+    /* grid-template-areas:
+    'div div div div div'
+    'section-2 section-2 section-2 section-1 section-1'
+    ; */
+}
+.intro{
+    grid-area: div;
+}
+.img{
+    grid-area: section-1;
 }
 .title{
     color: #26532B;
+    text-align: left;
+    font-size: 3em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 15px;
+    margin: .5em;
 }
 .misson{
     font-size: 30px;
     color:#26532B;
-    font-size: 25px;
-    margin: 15px;
+    font-size: 2em;
+    margin: 1em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .personal-photo{
-    width: 330px;
+    width: 30em;
     float:right;
-   padding: 10px;
+   padding: 30px;
    margin: 5px;
 }
 .quote{
-    font-size: 3em;
+    font-size: 5em;
     font-style:italic;
     color: #26532B;
     margin: 20px;
+    grid-area: section-2;
 }
 /* About page style */
 .title-about{
@@ -264,14 +284,15 @@ form{
 }
 form label{
     color: #26532B;
-    font-size: 20px;
+    font-size: 2em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 input[type="submit"]{
     color: #E4F0D0;
     background-color: #673C4F;
-    font-size: 18pt;
+    font-size: 2em;
     padding: 5px;
+    margin: .5em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-radius: 1em;
 }
@@ -279,23 +300,25 @@ input[type="submit"]{
     width: 30em;
     border-radius: 2em;
     float:  right;
+    padding: 2em;
 }
 /* Sucess Page Style */
 
 .success{
     background-color: #E4F0D0;
     margin: 30px;
-    height: 530px;
+    height: 80vh;
 }
    
 .title-success{
     color: #26532B;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
     padding-left: 1em;
 }
 .puma{
-    width: 20em;
+    width: 45rem;
+    padding: 1em;
     border-radius: 2em;
     margin: 1em;
 }
@@ -312,4 +335,125 @@ footer{
     width: 100%;
     bottom: 0;
     border-radius: 1em;
+}
+
+/* Desktop style */
+@media(max-width: 1680){
+    .home{
+        grid-template-areas:
+        'div div div div div'
+        'section-2 section-2 section-2 section-1 section-1'
+        ;
+    }
+    .about{
+        grid-template-areas: 
+        'div div div'
+        'hobby-1 hobby-1 hobby-1'
+        'hobby-2 hobby-2 hobby-2'
+        'hobby-3 hobby-3 hobby-3'
+        ;
+    }
+    .portfolio{
+        grid-template-areas: 
+        'div div div div'
+        'project-1 project-1 project-1 project-1'
+        'project-2 project-2 project-2 project-2'
+        'project-3 project-3 project-3 project-3'
+        ;
+    }
+    .contact{
+        grid-template-areas:
+        'div div div div'
+        'section-1 section-1 section-2 section-2'
+        ;
+    }
+    .success{
+        grid-template-areas:
+        'div div'
+        'section section'
+        ;
+    }
+}
+
+/* tablet style */
+@media(max-width: 1024){
+    .home{
+        grid-template-areas:
+        'div div div'
+        'section-2 section-2'
+        'section-1 section-1'
+        ;
+    }
+    .about{
+        grid-template-areas: 
+        'div div'
+        'hobby-1 hobby-1'
+        'hobby-2 hobby-2'
+        'hobby-3 hobby-3'
+        ;
+    }
+    .portfolio{
+        grid-template-areas: 
+        'div div'
+        'project-1 project-1'
+        'project-2 project-2'
+        'project-3 project-3'
+        ;
+    }
+    .contact{
+        grid-template-areas:
+        'div div div div'
+        'section-1 section-1' 
+        'section-2 section-2'
+        ;
+    }
+    .success{
+        grid-template-areas:
+        'div div'
+        'section section'
+        ;
+    }
+}
+
+/* phone style */
+@media(max-width: 480){
+    .home{
+        grid-template-areas:
+        'div'
+        'section-1'
+        'section-2'
+        ;
+    }
+    .title{
+        font-size: 1em;
+    }
+    .about{
+        grid-template-areas: 
+        'div'
+        'hobby-1'
+        'hobby-2'
+        'hobby-3'
+        ;
+    }
+    .portfolio{
+        grid-template-areas: 
+        'div'
+        'project-1'
+        'project-2'
+        'project-3'
+        ;
+    }
+    .contact{
+        grid-template-areas:
+        'div'
+        'section-1'
+        'section-2'
+        ;
+    }
+    .success{
+        grid-template-areas:
+        'div'
+        'section'
+        ;
+    }
 }
