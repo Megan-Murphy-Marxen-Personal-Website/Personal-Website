@@ -40,18 +40,6 @@ main{
     'hobby-3 hobby-3 hobby-3'
     ;
 }
-.title-about{
-    grid-area: div;
-} 
-.hobby-1{
-    grid-area: hobby-1;
-} 
- .hobby-2{
-    grid-area: hobby-2;
-} 
-.hobby-3{
-    grid-area: hobby-3;
-}
 
 /* Portfolio page grid area */
 .portfolio{
@@ -62,18 +50,7 @@ main{
     'project-3 project-3 project-3 project-3'
     ;
 }
-.project-head{
-    grid-area: div;
-}
-.project-1{
-    grid-area: project-1;
-}
-.project-2{
-    grid-area: project-2;
-}
-.project-3{
-    grid-area: project-3;
-}
+
 /*contact page grid */
 .contact{
     grid-template-areas:
@@ -81,27 +58,12 @@ main{
     'section-1 section-1 section-2'
     ;
 }
-.title-contact{
-    grid-area: div;
-}
-.form{
-    grid-area: section-1;
-}
-.img-2{
-    grid-area: section-2;
-}
 /*Success page grid */
 .success{
     grid-template-areas:
     'div div'
     'section section'
     ;
-}
-.title-success{
-    grid-area: div;
-}
-.img-3{
-    grid-area: section;
 }
 /* Persistent header style */
 header{
@@ -139,8 +101,8 @@ a:visited{
     height: 80vh;
     /* grid-template-areas:
     'div div div div div'
-    'section-2 section-2 section-2 section-1 section-1'
-    ; */
+    'section-2 section-2 section-2 section-1 section-1'*/
+    ;
 }
 .intro{
     grid-area: div;
@@ -169,7 +131,7 @@ a:visited{
    margin: 5px;
 }
 .quote{
-    font-size: 5em;
+    font-size: 3em;
     font-style:italic;
     color: #26532B;
     margin: 20px;
@@ -183,6 +145,7 @@ a:visited{
     margin-right: 20px;
     color: #26532B;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-area: div;
 }
 .about-h2{
     margin-bottom: 0;
@@ -197,6 +160,15 @@ a:visited{
     margin-left: 20px;
     font-size: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.hobby-1{
+    grid-area: hobby-1;
+} 
+ .hobby-2{
+    grid-area: hobby-2;
+} 
+.hobby-3{
+    grid-area: hobby-3;
 }
 h3{
     font-size: 30px;
@@ -233,6 +205,7 @@ h3{
     padding-top: 2px;
     margin: 10px;
     background-color: #E4F0D0;
+    grid-area: div;
 }
 .proj-h2{
     margin-bottom: 10px;
@@ -245,6 +218,15 @@ h3{
     padding: 20px;
     font-size: 25px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.project-1{
+    grid-area: project-1;
+}
+.project-2{
+    grid-area: project-2;
+}
+.project-3{
+    grid-area: project-3;
 }
 .cats{
     float: right;
@@ -273,9 +255,11 @@ h3{
     padding-left: 1em;
     border-radius: 2em;
     border:3px solid #26532B;
+    grid-area: div;
 }
 .form{
     background-color: #E4F0D0;
+    grid-area: section-1;
     border-radius: 2em;
     border:3px solid #26532B;
 }
@@ -302,8 +286,10 @@ input[type="submit"]{
     float:  right;
     padding: 2em;
 }
+.img-2{
+    grid-area: section-2;
+}
 /* Sucess Page Style */
-
 .success{
     background-color: #E4F0D0;
     margin: 30px;
@@ -315,12 +301,16 @@ input[type="submit"]{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2em;
     padding-left: 1em;
+    grid-area: div;
 }
 .puma{
     width: 45rem;
     padding: 1em;
     border-radius: 2em;
     margin: 1em;
+}
+.img-3{
+    grid-area: section;
 }
 /* Footer style */
 .mail{
