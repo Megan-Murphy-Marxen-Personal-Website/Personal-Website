@@ -13,27 +13,36 @@ body{
 /* header{
     grid-area: header;
 } */
+
 main{
     padding-top: 120px;
     padding-bottom:60px;
     display: grid;
     gap: 1em;
-    grid-auto-columns: 1fr;
+    /* grid-auto-columns: 1fr; */
     /* grid-area: main; */
 }
 /* footer{
     grid-area: footer;
 } */
+
 /* Homepage grid area */
 .home{
     grid-template-areas:
     'div div div div div'
+    /* 'div'
+    'section-2'
+    'section-1' */
     'section-2 section-2 section-2 section-1 section-1'
     ;
 }
 /* About page grid area */
 .about{
     grid-template-areas: 
+    /* 'div'
+    'hobby-1'
+    'hobby-2'
+    'hobby-3' */
     'div div div'
     'hobby-1 hobby-1 hobby-1'
     'hobby-2 hobby-2 hobby-2'
@@ -44,23 +53,31 @@ main{
 /* Portfolio page grid area */
 .portfolio{
     grid-template-areas: 
-    'div div div div'
-    'project-1 project-1 project-1 project-1'
-    'project-2 project-2 project-2 project-2'
-    'project-3 project-3 project-3 project-3'
+    /* 'div'
+    'project-1'
+    'project-2'
+    'project-3' */
+    'div div div '
+    'project-1 project-1 project-1'
+    'project-2 project-2 project-2'
+    'project-3 project-3 project-3'
     ;
 }
-
 /*contact page grid */
 .contact{
     grid-template-areas:
-    'div div div'
-    'section-1 section-1 section-2'
+    /* 'div'
+    'section-1'
+    'section-2' */
+    'div div'
+    'section-1 section-2'
     ;
 }
 /*Success page grid */
 .success{
     grid-template-areas:
+    /* 'div'
+    'section' */
     'div div'
     'section section'
     ;
@@ -99,9 +116,6 @@ a:visited{
     background-color: #E4F0D0;
     margin: 30px;
     height: 80vh;
-    /* grid-template-areas:
-    'div div div div div'
-    'section-2 section-2 section-2 section-1 section-1'*/
     ;
 }
 .intro{
@@ -264,7 +278,7 @@ h3{
     border:3px solid #26532B;
 }
 form{
-    padding: 3em;
+    padding: 2em;
 }
 form label{
     color: #26532B;
@@ -282,8 +296,8 @@ input[type="submit"]{
 }
 .kitcat{
     width: 30em;
-    border-radius: 2em;
-    float:  right;
+    border-radius: 3em;
+    /* float:  right; */
     padding: 2em;
 }
 .img-2{
@@ -293,18 +307,18 @@ input[type="submit"]{
 .success{
     background-color: #E4F0D0;
     margin: 30px;
-    height: 80vh;
+    /* height: 80vh; */
 }
    
 .title-success{
     color: #26532B;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     padding-left: 1em;
     grid-area: div;
 }
 .puma{
-    width: 45rem;
+    width: 20rem;
     padding: 1em;
     border-radius: 2em;
     margin: 1em;
@@ -328,7 +342,7 @@ footer{
 }
 
 /* Desktop style */
-@media(max-width: 1680){
+@media screen and (max-width: 1680){
     .home{
         grid-template-areas:
         'div div div div div'
@@ -346,15 +360,15 @@ footer{
     .portfolio{
         grid-template-areas: 
         'div div div div'
-        'project-1 project-1 project-1 project-1'
-        'project-2 project-2 project-2 project-2'
-        'project-3 project-3 project-3 project-3'
+        'project-1 project-1 project-1'
+        'project-2 project-2 project-2'
+        'project-3 project-3 project-3'
         ;
     }
     .contact{
         grid-template-areas:
-        'div div div div'
-        'section-1 section-1 section-2 section-2'
+        'div div div div div'
+        'section-1 section-1 section-2 section-2 section-2'
         ;
     }
     .success{
@@ -366,8 +380,9 @@ footer{
 }
 
 /* tablet style */
-@media(max-width: 1024){
+@media screen and (max-width: 1024){
     .home{
+        grid-template-columns: 1fr;
         grid-template-areas:
         'div div div'
         'section-2 section-2'
@@ -375,6 +390,7 @@ footer{
         ;
     }
     .about{
+        grid-template-columns: 1fr;
         grid-template-areas: 
         'div div'
         'hobby-1 hobby-1'
@@ -383,6 +399,7 @@ footer{
         ;
     }
     .portfolio{
+        grid-template-columns: 1fr;
         grid-template-areas: 
         'div div'
         'project-1 project-1'
@@ -391,10 +408,11 @@ footer{
         ;
     }
     .contact{
+        grid-template-columns: 1fr;
         grid-template-areas:
-        'div div div div'
-        'section-1 section-1' 
-        'section-2 section-2'
+        'div div'
+        'section-1 section-2' 
+        /* 'section-2 section-2' */
         ;
     }
     .success{
@@ -403,21 +421,32 @@ footer{
         'section section'
         ;
     }
+    .puma{
+        width: 3em;
+    }
 }
 
 /* phone style */
-@media(max-width: 480){
+@media screen and (max-width: 480){
     .home{
+        grid-template-columns: 1fr;
         grid-template-areas:
         'div'
-        'section-1'
         'section-2'
+        'section-1'
         ;
     }
     .title{
-        font-size: 1em;
+        font-size:5px;
+    }
+    .quote{
+        font-size: .5em;
+    }
+    .personal-photo{
+        width: 10em;
     }
     .about{
+        grid-template-columns: 1fr;
         grid-template-areas: 
         'div'
         'hobby-1'
@@ -425,7 +454,11 @@ footer{
         'hobby-3'
         ;
     }
+    h3{
+        font-size: 10px;
+    }
     .portfolio{
+        grid-template-columns: 1fr;
         grid-template-areas: 
         'div'
         'project-1'
@@ -434,6 +467,7 @@ footer{
         ;
     }
     .contact{
+        grid-template-columns: 1fr;
         grid-template-areas:
         'div'
         'section-1'
@@ -441,6 +475,7 @@ footer{
         ;
     }
     .success{
+        grid-template-columns: 1fr;
         grid-template-areas:
         'div'
         'section'
