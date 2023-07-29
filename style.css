@@ -29,57 +29,57 @@ main{
 /* Homepage grid area */
 .home{
     grid-template-areas:
-    'div div div div div'
-    /* 'div'
+    /* 'div div div div div' */
+    'div'
     'section-2'
-    'section-1' */
-    'section-2 section-2 section-2 section-1 section-1'
+    'section-1'
+    /* 'section-2 section-2 section-2 section-1 section-1' */
     ;
 }
 /* About page grid area */
 .about{
     grid-template-areas: 
-    /* 'div'
+    'div'
     'hobby-1'
     'hobby-2'
-    'hobby-3' */
-    'div div div'
+    'hobby-3'
+    /* 'div div div'
     'hobby-1 hobby-1 hobby-1'
     'hobby-2 hobby-2 hobby-2'
-    'hobby-3 hobby-3 hobby-3'
+    'hobby-3 hobby-3 hobby-3' */
     ;
 }
 
 /* Portfolio page grid area */
 .portfolio{
     grid-template-areas: 
-    /* 'div'
+    'div'
     'project-1'
     'project-2'
-    'project-3' */
-    'div div div '
+    'project-3'
+    /* 'div div div '
     'project-1 project-1 project-1'
     'project-2 project-2 project-2'
-    'project-3 project-3 project-3'
+    'project-3 project-3 project-3' */
     ;
 }
 /*contact page grid */
 .contact{
     grid-template-areas:
-    /* 'div'
+    'div'
     'section-1'
-    'section-2' */
-    'div div'
-    'section-1 section-2'
+    'section-2'
+    /* 'div div'
+    'section-1 section-2' */
     ;
 }
 /*Success page grid */
 .success{
     grid-template-areas:
-    /* 'div'
-    'section' */
-    'div div'
-    'section section'
+    'div'
+    'section'
+    /* 'div div'
+    'section section' */
     ;
 }
 /* Persistent header style */
@@ -297,17 +297,15 @@ input[type="submit"]{
 .kitcat{
     width: 30em;
     border-radius: 3em;
-    /* float:  right; */
     padding: 2em;
 }
 .img-2{
     grid-area: section-2;
 }
-/* Sucess Page Style */
+/* Success Page Style */
 .success{
     background-color: #E4F0D0;
     margin: 30px;
-    /* height: 80vh; */
 }
    
 .title-success{
@@ -334,7 +332,7 @@ footer{
     background-color: #673C4F;
     padding: 10px;
     text-align: center;
-    font-size: xx-large;
+    font-size: 2em;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -342,7 +340,7 @@ footer{
 }
 
 /* Desktop style */
-@media screen and (max-width: 1680){
+@media screen and (max-width: 1680px){
     .home{
         grid-template-areas:
         'div div div div div'
@@ -380,7 +378,7 @@ footer{
 }
 
 /* tablet style */
-@media screen and (max-width: 1024){
+@media screen and (max-width: 1024px){
     .home{
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -422,13 +420,27 @@ footer{
         ;
     }
     .puma{
-        width: 3em;
+        /* width: 3em; */
     }
 }
 
 /* phone style */
-@media screen and (max-width: 480){
+@media screen and (max-width: 480px){
+    main{
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+    header{
+        width: 100vw;
+    }
+   .name{
+    font-size: .5em
+   }
+    .links{
+        font-size: 1em;
+    }
     .home{
+        border: 2px solid #26532B;
         grid-template-columns: 1fr;
         grid-template-areas:
         'div'
@@ -437,13 +449,23 @@ footer{
         ;
     }
     .title{
-        font-size:5px;
+        font-size: .75em;
+        margin: 0;
+        padding-left: 10px;
+    }
+    .misson{
+        font-size: 1.3em;
+        margin-top: .5em;
     }
     .quote{
-        font-size: .5em;
+        font-size: 1.5em;
+        margin: 0;
     }
     .personal-photo{
-        width: 10em;
+        width: 8em;
+        float: left;
+        padding: 1em;
+        margin: 0;
     }
     .about{
         grid-template-columns: 1fr;
@@ -454,8 +476,27 @@ footer{
         'hobby-3'
         ;
     }
+    .title-about{
+        font-size: 8px;
+        border: 2px solid #26532B;
+    }
     h3{
-        font-size: 10px;
+        font-size: 15px;
+    }
+    .hobby-1 , .hobby-2, .hobby-3{
+        border: 2px solid #26532B;
+    }
+    .hobby-1 p , .hobby-2 p, .hobby-3 p{
+        font-size: .8em;
+    }
+    .travel{
+        width: 200px;
+    }
+    .board-game{
+        width: 200px;
+    }
+    .cat{
+        width: 200px;
     }
     .portfolio{
         grid-template-columns: 1fr;
@@ -466,6 +507,23 @@ footer{
         'project-3'
         ;
     }
+    .project-head{
+        font-size: .8em;
+        border: 2px solid #26532B;
+    }
+    .project-1 , .project-2, .project-3{
+        font-size: .8em;
+        border: 2px solid #26532B;
+    }
+    .cats{
+        width: 15em;
+    }
+    .sharks{
+        width: 12em;
+    }
+    .cocktails{
+        width: 15em;
+    }
     .contact{
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -474,11 +532,38 @@ footer{
         'section-2'
         ;
     }
+    .title-contact{
+        font-size: 1em;
+
+    }
+    form label{
+        font-size: 1em;
+    }
+    input[type="submit"]{
+        font-size: 1em;
+    }
+    .kitcat{
+        width: 20em;
+    }
     .success{
+        height: 80vh;
         grid-template-columns: 1fr;
         grid-template-areas:
         'div'
         'section'
         ;
+    }
+    .title-success{
+        font-size: 1em;
+    }
+    .title-success p{
+        font-size: .8em;
+    }
+    .puma{
+        width: 15em;
+    }
+    footer{
+        width: 100vw;
+        font-size: 1em;
     }
 }
