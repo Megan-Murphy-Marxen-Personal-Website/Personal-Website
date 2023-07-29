@@ -95,11 +95,11 @@ header{
     text-align: center;
     color: #E4F0D0;
     font-family: serif;
-    font-size: 20px;
+    font-size: 30px;
 }
 .links{
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
 a:link{
@@ -332,7 +332,7 @@ footer{
     background-color: #673C4F;
     padding: 10px;
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -341,11 +341,30 @@ footer{
 
 /* Desktop style */
 @media screen and (max-width: 1680px){
+    main{
+        padding-top: 220px;
+        padding-bottom: 20px;
+    }
+    header{
+        width: 100vw;
+    }
+    .name{
+        margin:0;
+    }
     .home{
         grid-template-areas:
         'div div div div div'
         'section-2 section-2 section-2 section-1 section-1'
         ;
+    }
+    .personal-photo{
+        float: left;
+        padding: 1em;
+        margin: 0;
+    }
+    .quote{
+        font-size: 4em;
+
     }
     .about{
         grid-template-areas: 
@@ -355,6 +374,31 @@ footer{
         'hobby-3 hobby-3 hobby-3'
         ;
     }
+    .title-about{
+        font-size: 1.5em;
+        border: 2px solid #26532B;
+    }
+    .about-h2{
+        margin-top: 0;
+    }
+    h3{
+        font-size: 2em;
+    }
+    .hobby-1 , .hobby-2, .hobby-3{
+        border: 2px solid #26532B;
+    }
+    .hobby-1 p , .hobby-2 p, .hobby-3 p{
+        font-size: 1.5em;
+    }
+    .travel{
+        width: 500px;
+    }
+    .board-game{
+        width: 500px;
+    }
+    .cat{
+        width: 500px;
+    }
     .portfolio{
         grid-template-areas: 
         'div div div div'
@@ -363,17 +407,64 @@ footer{
         'project-3 project-3 project-3'
         ;
     }
+    .project-head{
+        font-size: 1.5em;
+        border: 2px solid #26532B;
+    }
+    .proj-h2{
+        margin-top: 10px;
+    }
+    .project-1 , .project-2, .project-3{
+        border: 2px solid #26532B;
+    }
+    .project-1 p , .project-2 p, .project-3 p{
+        font-size: 1.5em;
+    }
+    .cats{
+        width: 20em;
+    }
+    .sharks{
+        width: 18em;
+    }
+    .cocktails{
+        width: 20em;
+    }
     .contact{
         grid-template-areas:
         'div div div div div'
         'section-1 section-1 section-2 section-2 section-2'
         ;
     }
+    .title-contact{
+        font-size: 2em;
+    }
+    .form{
+        margin-left: 5px;
+    }
+    form label{
+        font-size: 2em;
+    }
+    input[type="submit"]{
+        font-size: 2em;
+    }
+    .kitcat{
+        width: 35em;
+    }
     .success{
+        height: 70vh;
         grid-template-areas:
         'div div'
         'section section'
         ;
+    }
+    .title-success{
+        font-size: 2em;
+    }
+    .title-success p{
+        font-size: 1em;
+    }
+    .puma{
+        width: 35em;
     }
 }
 
@@ -405,7 +496,6 @@ footer{
     }
     .quote{
         font-size: 3em;
-        /* margin: 0; */
     }
     .personal-photo{
         width: 15em;
@@ -491,7 +581,7 @@ footer{
     }
     footer{
         width: 100vw;
-        /* font-size: 1em; */
+        font-size: 3em;
     }
 }
 
