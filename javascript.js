@@ -1,1 +1,3 @@
-console.log("Welcome to my personal website!")
+let greeting= "Welcome";
+
+console.log(greeting + " to my personal website!");
