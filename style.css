@@ -3,29 +3,14 @@ body{
     display: grid;
     gap: 1em;
     margin:0;
-    /* grid-auto-columns: 1fr; */
-    /* grid-template-areas: 
-    'header header header header'
-    'main main main main'
-    'footer footer footer footer'
-    ; */
-}
-/* header{
-    grid-area: header;
-} */
 
+}
 main{
     display: grid;
     gap: 1em;
-    padding-top: 120px;
+    padding-top: 180px;
     padding-bottom:60px;
-    /* grid-auto-columns: 1fr; */
-    /* grid-area: main; */
 }
-/* footer{
-    grid-area: footer;
-} */
-
 /* Homepage grid area */
 .home{
     grid-template-areas:
@@ -87,6 +72,7 @@ header{
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    transition: margin-right 2s;
 }
 a:link{
     color:#E4F0D0;
@@ -96,6 +82,7 @@ a:visited{
 }
 a:hover{
     background-color: #26532B;
+    font-size: 55px;
 }
 .active{
     text-decoration: underline overline red;
@@ -195,7 +182,7 @@ h3{
     margin-right: 5px;
     width: 300px;
 }
-/* Protfolio page style */
+/* Portfolio page style */
 .project-head{
     color: #26532B;
     background-color: #E4F0D0;
@@ -294,11 +281,10 @@ input[type="submit"]{
     background-color: #E4F0D0;
     margin: 30px;
 }
-   
 .title-success{
     color: #26532B;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5em;
+    font-size: 3em;
     grid-area: div;
     padding-left: 1em;
 }
@@ -306,7 +292,7 @@ input[type="submit"]{
     border-radius: 2em;
     margin: 1em;
     padding: 1em;
-    width: 20rem;
+    width: 40em;
 }
 .img-3{
     grid-area: section;
@@ -334,9 +320,6 @@ footer{
     }
     header{
         width: 100vw;
-    }
-    .name{
-        margin:0;
     }
     .home{
         grid-template-areas:
@@ -408,13 +391,13 @@ footer{
         font-size: 1.5em;
     }
     .cats{
-        width: 20em;
+        width: calc(10em + 10em);
     }
     .sharks{
-        width: 18em;
+        width: calc(6em * 3em) ;
     }
     .cocktails{
-        width: 20em;
+        width: calc(10em + 10em);
     }
     .contact{
         grid-template-areas:
@@ -458,12 +441,18 @@ footer{
 /* tablet style */
 @media screen and (max-width: 1024px){
     main{
-        padding-top: 160px;
+        padding-top: 180px;
         padding-bottom: 20px;
     }
     header{
         width: 100vw;
     }
+    .name{
+        font-size: 1.6em;
+       }
+     .links{
+            font-size: 1.5em;
+        }
     .home{
         grid-template-columns: 1fr;
         grid-template-areas:
