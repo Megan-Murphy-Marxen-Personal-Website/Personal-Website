@@ -379,6 +379,13 @@ footer{
 
 /* tablet style */
 @media screen and (max-width: 1024px){
+    main{
+        padding-top: 160px;
+        padding-bottom: 20px;
+    }
+    header{
+        width: 100vw;
+    }
     .home{
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -386,6 +393,25 @@ footer{
         'section-2 section-2'
         'section-1 section-1'
         ;
+    }
+    .title{
+        font-size: 1.5em;
+        margin: 1em;
+        padding-left: 10px;
+    }
+    .misson{
+        font-size: 1.3em;
+        margin-top: .5em;
+    }
+    .quote{
+        font-size: 3em;
+        /* margin: 0; */
+    }
+    .personal-photo{
+        width: 15em;
+        float: left;
+        padding: 1em;
+        margin: 0;
     }
     .about{
         grid-template-columns: 1fr;
@@ -396,6 +422,16 @@ footer{
         'hobby-3 hobby-3'
         ;
     }
+    .title-about{
+        font-size: 1em;
+        border: 2px solid #26532B;
+    }
+    .about-h2{
+        margin-top: 0;
+    }
+    .hobby-1 , .hobby-2, .hobby-3{
+        border: 2px solid #26532B;
+    }
     .portfolio{
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -405,22 +441,57 @@ footer{
         'project-3 project-3'
         ;
     }
+    .project-head{
+        font-size: 1.5em;
+        border: 2px solid #26532B;
+    }
+    .proj-h2{
+        margin-top: 10px;
+    }
+    .project-1 , .project-2, .project-3{
+        border: 2px solid #26532B;
+    }
     .contact{
         grid-template-columns: 1fr;
         grid-template-areas:
         'div div'
         'section-1 section-2' 
-        /* 'section-2 section-2' */
         ;
     }
+    .title-contact{
+        font-size: 1.5em;
+    }
+    .form{
+        margin-left: 5px;
+    }
+    form label{
+        font-size: 1.5em;
+    }
+    input[type="submit"]{
+        font-size: 1.5em;
+    }
+    .kitcat{
+        width: 25em;
+    }
     .success{
+        height: 70vh;
         grid-template-areas:
         'div div'
         'section section'
         ;
     }
+    .title-success{
+        font-size: 1.5em;
+    }
+    .title-success p{
+        font-size: .8em;
+    }
     .puma{
-        /* width: 3em; */
+        width: 25em;
+    }
+    footer{
+        width: 100vw;
+        /* font-size: 1em; */
     }
 }
 
